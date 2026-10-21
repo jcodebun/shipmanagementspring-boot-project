@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Base define  -->
+ <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />           
+        <put-attribute name="side" value="/WEB-INF/basefragments/_side.jsp" /> 
+        <put-attribute name="body" value="" /> 
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+ </definition> 
+ 
+    
+ <!-- Welcome Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition>
+ <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition>
+ <!-- User Register Page  -->
+    <definition name="userRegister" extends="base.definition">  
+        <put-attribute name="title" value="User Register" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userregister.jsp" />  
+    </definition>      
+    
+ <!-- Add Shipment Page  -->
+    <definition name="addShipment" extends="base.definition">  
+        <put-attribute name="title" value="Add Shipment" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addshipment.jsp" />  
+    </definition>
+ <!-- Shipment List Page  -->
+    <definition name="shipmentList" extends="base.definition">  
+        <put-attribute name="title" value="List of shipment" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_shipmentlist.jsp" />  
+    </definition>
+ <!-- Payment Page  -->
+    <definition name="paymentPage" extends="base.definition">  
+        <put-attribute name="title" value="Pay" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_paymentPage.jsp" />  
+    </definition>
+ <!-- Add Tracking Page  -->
+    <definition name="addTracking" extends="base.definition">  
+        <put-attribute name="title" value="Update Tracking" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addtracking.jsp" />  
+    </definition> 
+ <!-- Track Page  -->
+    <definition name="trackList" extends="base.definition">  
+        <put-attribute name="title" value="Track Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_tracklist.jsp" />  
+    </definition> 
+ <!-- Customers Page  -->
+    <definition name="userList" extends="base.definition">  
+        <put-attribute name="title" value="Customer Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userList.jsp" />  
+    </definition>
+ <!-- Profile Page  -->
+    <definition name="myProfile" extends="base.definition">  
+        <put-attribute name="title" value="Profile Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_myProfile.jsp" />  
+    </definition> 
+ <!-- About Us Page  -->
+    <definition name="aboutus" extends="base.definition">  
+        <put-attribute name="title" value="About Us Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_aboutus.jsp" />  
+    </definition>
+ <!-- Cost Page  -->
+    <definition name="addCost" extends="base.definition">  
+        <put-attribute name="title" value="Cost Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addcost.jsp" />  
+    </definition>
+ <!-- Cost List  -->
+    <definition name="costList" extends="base.definition">  
+        <put-attribute name="title" value="Cost List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_costlist.jsp" />  
+    </definition> 
+ <!-- Change Password  -->
+    <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition>                                    
+</tiles-definitions>       
